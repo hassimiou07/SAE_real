@@ -51,7 +51,6 @@ header nav a::after {
     position: absolute;
     bottom: -2px;
     left: 0;
-    width: 0%;
     height: 3px;
     background: #00eaff;
     border-radius: 4px;
@@ -379,3 +378,91 @@ footer button{
     transform: scale(1.03);
     opacity: 1;
 }
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .intro-text {
+        max-width: 100%;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .intro img {
+        width: 90%;
+    }
+
+    h2 {
+        padding-left: 20px;
+        font-size: 26px;
+    }
+
+    .tabs-row {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .tab {
+        width: 90%;
+        text-align: center;
+    }
+
+    .carousel-item {
+        flex: 0 0 100%;
+        height: 300px;
+    }
+
+    .carousel-item img {
+        max-width: 260px;
+    }
+
+    .carousel-btn {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    footer button {
+        width: 100%;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .bottom-section form,
+    .apropos {
+        width: 90%;
+    }
+
+    .bottom-section form input,
+    .bottom-section form textarea {
+        font-size: 14px;
+    }
+}
+/*erreur rencontre
+difficulte a gere le responsive parceque jai ajouter beacoup de sous elements donc cetait complique davoir
+chaqun des elements qui devraient etre donc responsive pour chaqu eelement 
+difficulte : 2 
+parvenir a faire en sorte davoir un carousel fonctionnel, alternative trouve leffectue avec un script js
+dificulte 3:
+parvenir a avoir un bon rapport entre professionalisme, virtuosite et accecibilite pour des eleves de 3.
+
+*/
