@@ -30,6 +30,20 @@ header .logo {
 header img {
     width: 36px; height: 36px;
 }
+header nav a::after {
+    content:"";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    background: #00eaff;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
 
 nav a {
     margin: 0 15px;
@@ -39,10 +53,6 @@ nav a {
     position: relative;
 }
 
-nav a.active,
-nav a:hover {
-    color: #00eaff;
-}
 
 /* redes */
 .social img {
@@ -126,6 +136,17 @@ h2 {
 .stage-card img {
     width: 100%;
     border-radius: 15px;
+}
+.stage-card button {
+    width: 40%;
+    height: 40px;
+    border-radius: 17px;
+    color: white;
+    margin-left: 1%;
+    margin-top: 10px;
+    background: #4b4bff;
+    background-size: 170%;
+    border: double white;
 }
 
 /* ====================== ICON SECTION ====================== */
