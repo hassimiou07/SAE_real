@@ -1,0 +1,262 @@
+/* ========================================================= */
+/*              STYLES PAGE "STAGE" — HARDIS GROUP           */
+/* ========================================================= */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #eef2ff;
+    color: #222;
+}
+
+/* ====================== HEADER ====================== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: linear-gradient(90deg, #4b4bff, #6a00f4);
+    color: white;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+}
+
+header img {
+    width: 36px; height: 36px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a.active,
+nav a:hover {
+    color: #00eaff;
+}
+
+/* redes */
+.social img {
+    width: 32px;
+    opacity: 0.8;
+}
+.social img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* ====================== INTRO ====================== */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.intro-text {
+    width: 50%;
+    background: white;
+    padding: 30px;
+    border-left: 6px solid #4b4bff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(75,75,255,0.25);
+}
+
+.intro img {
+    width: 380px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(75,75,255,0.4);
+}
+
+/* ====================== TITRES ====================== */
+h2 {
+    padding-left: 60px;
+    font-size: 32px;
+    margin-top: 60px;
+    color: #333;
+}
+
+/* ====================== SECTION BOX ====================== */
+.section-box {
+    width: 80%;
+    background: white;
+    margin: 25px auto;
+    padding: 25px;
+    border-left: 8px solid #4b4bff;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(75,75,255,0.18);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* ====================== STAGE CARDS ====================== */
+.stage-cards {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stage-card {
+    background: white;
+    width: 360px;
+    padding: 20px;
+    border-radius: 20px;
+    border-left: 6px solid #4b4bff;
+    box-shadow: 0 5px 15px rgba(75,75,255,0.22);
+    transition: 0.3s ease;
+}
+
+.stage-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(75,75,255,0.35);
+}
+
+.stage-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* ====================== ICON SECTION ====================== */
+.icon-section {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.icon-box {
+    width: 200px;
+    text-align: center;
+}
+
+.icon-circle {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 4px solid #4b4bff;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(75,75,255,0.25);
+}
+
+.icon-circle img {
+    width: 48px;
+}
+
+/* ====================== FOOTER ====================== */
+footer::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: linear-gradient(90deg, #4b4bff, #00d4ff, #6a00f4, #4b4bff);
+    margin-bottom: 40px;
+    animation: gradientMove 4s linear infinite;
+    background-size: 300%;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
+
+footer {
+    margin-top: 120px;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #4b4bff, #6a00f4, #00d4ff);
+    color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 0 -8px 25px rgba(0,0,0,0.25);
+}
+footer button{
+    content: "";
+    background: linear-gradient(90deg, #4b4bff, cyan, #6a00f4, #4b4bff);
+    margin-bottom: 40px;
+    animation: gradientMove 4s linear infinite;
+    background-size: 300%;
+    width: 100%;
+    height: 10%;
+    border-radius: 20px;
+}
+
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.bottom-section form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 29px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    width: 45%;
+    min-width: 300px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.bottom-section form h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.bottom-section form input,
+.bottom-section form textarea {
+    width: 96%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+
+.bottom-section form input:focus,
+.bottom-section form textarea:focus {
+    outline: 3px solid #00eaff;
+    box-shadow: 0 0 12px #00eaff;
+}
+
+
+.apropos {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    width: 40%;
+    min-width: 300px;
+    color: #f0f0f0;
+}
+
+.apropos img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 0 20px rgba(0,225,255,0.4);
+    opacity: 0.9;
+}
+
+.apropos img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
