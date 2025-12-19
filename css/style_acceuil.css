@@ -2,8 +2,8 @@
 
 html {
     scroll-behavior: smooth;
+    transition: 0.25s ease;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -12,11 +12,6 @@ body {
     color: #222;
     overflow-x: hidden;
 }
-* {
-    transition: 0.25s ease;
-}
-
-
 header {
     display: flex;
     color: white;
@@ -30,13 +25,11 @@ header {
     z-index: 50;
     backdrop-filter: blur(6px);
 }
-
 header img {
     width: 36px;
     height: 36px;
     border-radius: 10px;
 }
-
 header nav a {
     margin: 0 15px;
     text-decoration: none;
