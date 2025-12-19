@@ -30,6 +30,9 @@ header img {
     height: 36px;
     border-radius: 10px;
 }
+header nav{
+    margin-right: 35%;
+}
 header nav a {
     margin: 0 15px;
     text-decoration: none;
