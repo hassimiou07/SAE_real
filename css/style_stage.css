@@ -1,7 +1,3 @@
-/* ========================================================= */
-/*              STYLES PAGE "STAGE" — HARDIS GROUP           */
-/* ========================================================= */
-
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -9,7 +5,6 @@ body {
     color: #222;
 }
 
-/* ====================== HEADER ====================== */
 header {
     display: flex;
     align-items: center;
@@ -25,6 +20,22 @@ header .logo {
     align-items: center;
     gap: 12px;
     font-size: 20px;
+}
+#menu-toggle {
+    display: none;
+}
+.burger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+.toggle-more {
+    display: none;
+}
+header nav {
+  display: flex;        
+  gap: 30px;           
+  margin-right: 35%;
 }
 
 header img {
@@ -46,25 +57,17 @@ header nav a:hover::after {
 }
 
 nav a {
-    margin: 0 15px;
+    margin: 10 15px;
     text-decoration: none;
     color: white;
     font-weight: 600;
-    position: relative;
-}
-
-
-/* redes */
-.social img {
-    width: 32px;
-    opacity: 0.8;
+    position: relative;                                                                                                                                                                                                                                                                                                                    
 }
 .social img:hover {
     opacity: 1;
     transform: scale(1.1);
 }
 
-/* ====================== INTRO ====================== */
 .intro {
     display: flex;
     align-items: center;
@@ -87,7 +90,6 @@ nav a {
     box-shadow: 0px 0px 20px rgba(75,75,255,0.4);
 }
 
-/* ====================== TITRES ====================== */
 h2 {
     padding-left: 60px;
     font-size: 32px;
@@ -95,7 +97,6 @@ h2 {
     color: #333;
 }
 
-/* ====================== SECTION BOX ====================== */
 .section-box {
     width: 80%;
     background: white;
@@ -108,7 +109,6 @@ h2 {
     line-height: 1.7;
 }
 
-/* ====================== STAGE CARDS ====================== */
 .stage-cards {
     width: 80%;
     margin: 40px auto;
@@ -149,7 +149,6 @@ h2 {
     border: double white;
 }
 
-/* ====================== ICON SECTION ====================== */
 .icon-section {
     width: 80%;
     margin: 40px auto;
@@ -180,44 +179,29 @@ h2 {
 .icon-circle img {
     width: 48px;
 }
-
-/* ====================== FOOTER ====================== */
-footer::before {
-    content: "";
-    display: block;
-    height: 5px;
-    background: linear-gradient(90deg, #4b4bff, #00d4ff, #6a00f4, #4b4bff);
-    margin-bottom: 40px;
-    animation: gradientMove 4s linear infinite;
-    background-size: 300%;
-}
-
 @keyframes gradientMove {
     0% { background-position: 0%; }
     100% { background-position: 300%; }
 }
 
-
 footer {
     margin-top: 120px;
     padding: 60px 40px;
-    background: linear-gradient(135deg, #4b4bff, #6a00f4, #00d4ff);
+    background: linear-gradient(135deg, #4653a9, #5c67c6);
     color: white;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    box-shadow: 0 -8px 25px rgba(0,0,0,0.25);
-}
-footer button{
-    content: "";
-    background: linear-gradient(90deg, #4b4bff, cyan, #6a00f4, #4b4bff);
-    margin-bottom: 40px;
-    animation: gradientMove 4s linear infinite;
-    background-size: 300%;
-    width: 100%;
-    height: 10%;
-    border-radius: 20px;
 }
 
+footer button{
+    background: #4653a9;
+    margin-top: 10px;
+    height: 12%;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    border: double white;
+}
 
 .bottom-section {
     display: flex;
@@ -232,13 +216,10 @@ footer button{
     border-radius: 20px;
     backdrop-filter: blur(10px);
     width: 45%;
-    min-width: 300px;
-    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    min-width: 282px;
 }
-
-.bottom-section form h3 {
+form >h3{
     text-align: center;
-    margin-bottom: 15px;
 }
 
 .bottom-section form input,
@@ -251,14 +232,6 @@ footer button{
     font-size: 14px;
 }
 
-
-.bottom-section form input:focus,
-.bottom-section form textarea:focus {
-    outline: 3px solid #00eaff;
-    box-shadow: 0 0 12px #00eaff;
-}
-
-
 .apropos {
     background: rgba(0, 0, 0, 0.25);
     padding: 25px;
@@ -266,39 +239,134 @@ footer button{
     backdrop-filter: blur(6px);
     width: 40%;
     min-width: 300px;
-    color: #f0f0f0;
+}
+iframe {
+    width: 97%;
+    height: 250px;
+    border-radius: 30px;
+    margin-left: 15px;
 }
 
-.apropos img {
-    width: 100%;
-    border-radius: 12px;
-    margin-top: 15px;
-    box-shadow: 0 0 20px rgba(0,225,255,0.4);
-    opacity: 0.9;
-}
-
-.apropos img:hover {
-    transform: scale(1.03);
-    opacity: 1;
-}
 @media (max-width: 768px) {
-    header{
-        display: flex;
+ strong {
+        font-size: 20px;
+    }
+    header {
+        padding: 15px 10px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        margin: 0; 
+      } 
+    .social{
+        margin-right: 15px;
+    }
+    .social img {
+        padding: 1px;
+    }
+    .burger {
+        display: block;
+        font-size: 0;       
+        cursor: pointer;
+        color: white;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .burger::before {
+        content: "☰";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 32px;
+        transition: all 0.8s ease;
+    }
+
+ 
+    .burger label,
+    .burger::after {
+        display: none !important;
+        visibility: hidden;
+    }
+    .main-nav {
+        position: absolute;
+        top: 74px;                 
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: linear-gradient(90deg, #4b4bff, #6a00f4);
         flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .main-nav { 
+        display: flex; 
+    }
+
+
+    #menu-toggle:checked + .burger::before {
+        content: "✕";
+        transform: rotate(90deg);
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 30px 20px;
         text-align: center;
     }
-    header nav a{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
+
+    .intro-text {
+        width: 90%;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .intro img {
+        width: 100%;
+        padding: 8px;
         margin-top: 20px;
     }
-    .intro{
-        padding: 10px 0px 0px 10px;
+
+    h2 {
+        padding-left: 20px;
+        font-size: 26px;
     }
-    .intro-text{
-        font-size: 10px;
-        padding: 10px;
-        width: 50%;
+
+    .tabs-row {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .tab {
+        width: 90%;
+        text-align: center;
+    }
+
+    .carousel-item {
+        flex: 0 0 100%;
+        height: 300px;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+     iframe {
+      width: 300px;
+      height: 200px;
+      border-radius: 30px;
+      margin-top: 15px;
+    }
+
+    footer {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    footer button{
+        width: 105%;
     }
 }

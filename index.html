@@ -9,25 +9,24 @@
 </head>
 
 <body>
+<header>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="burger">☰</label>
+    <div class="logo">
+        &nbsp;<strong>HARDIS GROUP</strong>
+    </div>
+    <nav class="main-nav">
+        <a href="lavibescheznous.html">La vibe chez nous</a>
+        <a href="stage.html">Nos Stages</a>
+        <a href="#bottom-section">Candidate au Stages</a>
+    </nav>
 
-    <header>
-        <div class="logo">
-            &nbsp;<strong>HARDIS GROUP</strong>
-        </div>
-
-        <nav>
-            <a href="lavibescheznous.html">La vibe chez nous</a>
-             <a href="stage.html">Nos Stages</a>
-            <a href="#bottom-section">Candidate au Stages</a>
-        </nav>
-
-        <div class="social">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png">
-        </div>
-    </header>
-
+    <div class="social">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png">
+    </div>
+</header>
     <section class="intro">
         <div class="intro-text">
            Envie de découvrir un métier cool, 
@@ -39,51 +38,84 @@
     </section>
 
 
-    <!-- ================== ONGLET SECTEURS ================== -->
-     <h2>Nos Secteurs : </h2>
+<h2>Nos Secteurs :</h2>
 
 <div class="tabs-container">
 
     <input type="radio" id="tab1" name="tabs" checked>
     <input type="radio" id="tab2" name="tabs">
     <input type="radio" id="tab3" name="tabs">
-
     <div class="tabs-row">
         <label class="tab" for="tab1">Développement de logiciels</label>
         <label class="tab" for="tab2">Cyber-sécurité</label>
         <label class="tab" for="tab3">Intelligence artificielle</label>
     </div>
-
     <div class="sector-box content1">
-        Le développement logiciel consiste à créer, tester et améliorer des applications utilisées par des milliers d’entreprises. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque repudiandae id dolores impedit dolor vel rerum maxime asperiores officia unde? Dignissimos odit quia ratione omnis nobis, illo quisquam incidunt necessitatibus!
-        <button>En savoir plus</button>
-    </div>
 
+        <p>
+            Le développement logiciel consiste à créer, tester et améliorer des applications.
+        </p>
+
+        <input type="checkbox" id="more1" class="toggle-more">
+
+        <div class="more-content">
+            <p>
+                Il inclut le développement web, mobile et desktop, la maintenance,
+                les tests automatisés, la collaboration en équipe et l’utilisation
+                d’outils comme Git, Docker ou les frameworks modernes.
+            </p>
+        </div>
+
+        <label for="more1" class="more-btn">En savoir </label>
+    </div>
     <div class="sector-box content2">
-        La cyber-sécurité protège les systèmes informatiques contre les attaques, les intrusions et les failles de sécurité. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo excepturi impedit asperiores consequatur quo rem quasi, error culpa tempore repellat magnam praesentium, quia, incidunt nesciunt sint officiis officia suscipit!
-      <button>En savoir plus</button>
-    </div>
 
+        <p>
+            La cyber-sécurité protège les systèmes contre les attaques et les intrusions.
+        </p>
+
+        <input type="checkbox" id="more2" class="toggle-more">
+
+        <div class="more-content">
+            <p>
+                Elle comprend le pentesting, la cryptographie, la sécurité réseau,
+                la détection d’intrusions, la protection des données et la
+                sensibilisation des utilisateurs.
+            </p>
+        </div>
+
+        <label for="more2" class="more-btn">En savoir </label>
+    </div>
     <div class="sector-box content3">
-        L’intelligence artificielle permet aux machines d’apprendre, de prédire, et d’aider les humains dans des tâches complexes. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis cum, voluptatum perferendis voluptates laboriosam magni commodi laborum nobis fugiat aliquam, incidunt quaerat deleniti sed delectus? Totam possimus deserunt optio iste.
-          <button>En savoir plus</button>
+
+        <p>
+            L’intelligence artificielle permet aux machines d’apprendre et de prédire.
+        </p>
+
+        <input type="checkbox" id="more3" class="toggle-more">
+
+        <div class="more-content">
+            <p>
+                Elle est utilisée dans la reconnaissance faciale, les assistants vocaux,
+                la médecine personnalisée, les voitures autonomes et l’analyse de données
+                grâce au machine learning et deep learning.
+            </p>
+        </div>
+
+        <label for="more3" class="more-btn">En savoir </label>
     </div>
 
 </div>
-
-
-
-    <!-- ================== CLIENTS ================== -->
      <h2>Nos Clients :</h2>
 <div class="carousel-wrapper">
 <button class="carousel-btn left">&lt;</button>
 <div class="carousel">
-  <div class="carousel-item"><img src="assets/renaultgroup.jpeg" alt="Renault"></div>
-  <div class="carousel-item"><img src="assets/carrefour.jpeg" alt="Carrefour"></div>
-  <div class="carousel-item"><img src="assets/geodis.jpeg" alt="Geodis"></div>
-  <div class="carousel-item"><img src="assets/decathlon.jpeg" alt="Decathlon"></div>
-  <div class="carousel-item"><img src="assets/amazon.jpeg" alt="Amazon"></div>
-  <div class="carousel-item"><img src="assets/dhl.png" alt="DHL"></div>
+  <div class="carousel-item"><img src="assets/renaultgroup.jpeg" alt="Renault" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="assets/carrefour.jpeg" alt="Carrefour" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="assets/geodis.jpeg" alt="Geodis" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="assets/decathlon.jpeg" alt="Decathlon" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="assets/amazon.jpeg" alt="Amazon" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="assets/dhl.png" alt="DHL" loading="lazy" decoding="async"></div>
 </div>
 <button class="carousel-btn right">&gt;</button>
 
@@ -92,14 +124,13 @@
 
     <!-- ================== js ================== -->
      <script>
-        const carousel = document.querySelector('.carousel');
+    const carousel = document.querySelector('.carousel');
 const items = document.querySelectorAll('.carousel-item');
 const btnLeft = document.querySelector('.carousel-btn.left');
 const btnRight = document.querySelector('.carousel-btn.right');
 
-let index = 1; // élément central
+let index = 1; 
 
-// Fonction pour mettre à jour l'affichage et l'item actif
 function updateCarousel() {
     const itemWidth = items[0].clientWidth;
     const offset = (index - 1) * itemWidth;
@@ -109,7 +140,7 @@ function updateCarousel() {
     items[index].classList.add('active');
 }
 
-// Navigation
+
 btnLeft.addEventListener('click', () => {
     if (index > 0) {
         index--;
@@ -123,38 +154,28 @@ btnRight.addEventListener('click', () => {
         updateCarousel();
     }
 });
-
-// Initial
 updateCarousel();
 
      </script>
-    <!-- ================== BAS DE PAGE ================== -->
 </body>
 <footer>
     <div class="bottom-section" id="bottom-section">
         <form>
             <h3>Formulaire de demande de stage</h3>
-            <input type="text" placeholder="Nom">
-            <input type="text" placeholder="Prénom">
-            <input type="email" placeholder="Adresse mail">
-            <textarea placeholder="Décrivez-vous en quelques mots..."></textarea>
+            <input type="text" placeholder="Nom" required>
+            <input type="text" placeholder="Prénom"required>
+            <input type="email" placeholder="Adresse mail" required>
+            <textarea placeholder="Décrivez-vous en quelques mots..." required></textarea>
             <button>Envoyer</button>
         </form>
 
         <div class="apropos">
             <h3>À propos de nous</h3>
-            📍 28 Quai de France, 38000 Grenoble<br>
-            📞 Tél : 04 76 70 80 50<br><br>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.1190561269456!2d5.708!3d45.173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af513cf8c3bcd%3A0x6f80a2c8d9a2b67!2sHardis%20Group%20Grenoble!5e0!3m2!1sfr!2sfr!4v0000000000"
-                width="100%" 
-                height="200" 
-                style="border:0;border-radius:8px;" 
-                allowfullscreen="" 
-                loading="lazy">
+             28 Quai de France, 38000 Grenoble<br>
+             Tél : 04 76 70 80 50<br><br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22502.20874145291!2d5.672194839550793!3d45.171383800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af340c3397225%3A0xc79ecb4a257ca78!2sHardis%20Group!5e0!3m2!1sfr!2sfr!4v1766968700187!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
     </div>
 </footer>
-
 </html>
