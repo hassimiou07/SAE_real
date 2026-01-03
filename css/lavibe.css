@@ -121,15 +121,6 @@ h2{
   padding: 20px;
 }
 
-footer::before {
-    content: "";
-    display: block;
-    height: 5px;
-    background: linear-gradient(90deg, #4b4bff, #00d4ff, #6a00f4, #4b4bff);
-    margin-bottom: 40px;
-    animation: gradientMove 4s linear infinite;
-    background-size: 300%;
-}
 
 @keyframes gradientMove {
     0% { background-position: 0%; }
@@ -190,7 +181,7 @@ form >h3{
     border-radius: 20px;
     backdrop-filter: blur(6px);
     width: 40%;
-    min-width: 300px;
+    min-width: 330px;
 }
 iframe {
     width: 97%;
